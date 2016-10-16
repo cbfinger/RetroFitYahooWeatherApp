@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_forecast_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.bryce.yahooweatherapp.ui_classes.ForecastDetailActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/yahoo_image_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/yahoo_image" />
+
+    <TextView
+        android:text="@string/powered_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/yahoo_image_view"
+        android:id="@+id/powered_by"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weather_type_view"
+        android:textAlignment="center"
+        android:text="@string/weather_type"
+        android:layout_marginTop="25dp"
+        android:textSize="36sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/high_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/high_temp_text_view"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_below="@+id/weather_type_image_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="@string/low_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/low_temp_text_view"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimary"
+        android:textAlignment="center"
+        android:layout_below="@+id/high_temp_text_view"
+        android:layout_alignLeft="@+id/high_temp_text_view"
+        android:layout_alignStart="@+id/high_temp_text_view"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/icon_na"
+        android:id="@+id/weather_type_image_view"
+        android:scaleType="center"
+        android:layout_below="@+id/weather_type_view"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:contentDescription="@string/weather_type_image" />
+</RelativeLayout>

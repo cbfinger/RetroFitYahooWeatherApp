@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">YahooWeatherApp</string>
+    <string name="thumbnail">thumbnail Image</string>
+    <string name="weather_type">Weather Type</string>
+    <string name="high_temp">High Temp</string>
+    <string name="low_temp">Low Temp</string>
+    <string name="yahoo_image">Yahoo Image</string>
+    <string name="powered_by">Powered By</string>
+    <string name="weather_type_image">Weather Type Image</string>
+    <string name="search_text">City, State</string>
+    <string name="no_locations_found">Sorry location were found! Double check your spelling and enter a City, State</string>
+
+</resources>
